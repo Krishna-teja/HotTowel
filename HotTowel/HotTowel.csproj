@@ -68,6 +68,58 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="src\client\app\admin\admin.controller.js" />
+    <Content Include="src\client\app\admin\admin.controller.spec.js" />
+    <Content Include="src\client\app\admin\admin.html" />
+    <Content Include="src\client\app\admin\admin.module.js" />
+    <Content Include="src\client\app\admin\admin.route.js" />
+    <Content Include="src\client\app\admin\admin.route.spec.js" />
+    <Content Include="src\client\app\app.module.js" />
+    <Content Include="src\client\app\blocks\exception\exception-handler.provider.js" />
+    <Content Include="src\client\app\blocks\exception\exception-handler.provider.spec.js" />
+    <Content Include="src\client\app\blocks\exception\exception.js" />
+    <Content Include="src\client\app\blocks\exception\exception.module.js" />
+    <Content Include="src\client\app\blocks\logger\logger.js" />
+    <Content Include="src\client\app\blocks\logger\logger.module.js" />
+    <Content Include="src\client\app\blocks\router\router-helper.provider.js" />
+    <Content Include="src\client\app\blocks\router\router.module.js" />
+    <Content Include="src\client\app\core\config.js" />
+    <Content Include="src\client\app\core\constants.js" />
+    <Content Include="src\client\app\core\core.module.js" />
+    <Content Include="src\client\app\core\dataservice.js" />
+    <Content Include="src\client\app\dashboard\dashboard.controller.js" />
+    <Content Include="src\client\app\dashboard\dashboard.controller.spec.js" />
+    <Content Include="src\client\app\dashboard\dashboard.html" />
+    <Content Include="src\client\app\dashboard\dashboard.module.js" />
+    <Content Include="src\client\app\dashboard\dashboard.route.js" />
+    <Content Include="src\client\app\dashboard\dashboard.route.spec.js" />
+    <Content Include="src\client\app\layout\ht-sidebar.directive.js" />
+    <Content Include="src\client\app\layout\ht-sidebar.directive.spec.js" />
+    <Content Include="src\client\app\layout\ht-top-nav.directive.js" />
+    <Content Include="src\client\app\layout\ht-top-nav.html" />
+    <Content Include="src\client\app\layout\layout.module.js" />
+    <Content Include="src\client\app\layout\shell.controller.js" />
+    <Content Include="src\client\app\layout\shell.controller.spec.js" />
+    <Content Include="src\client\app\layout\shell.html" />
+    <Content Include="src\client\app\layout\sidebar.controller.js" />
+    <Content Include="src\client\app\layout\sidebar.controller.spec.js" />
+    <Content Include="src\client\app\layout\sidebar.html" />
+    <Content Include="src\client\app\widgets\ht-img-person.directive.js" />
+    <Content Include="src\client\app\widgets\ht-widget-header.directive.js" />
+    <Content Include="src\client\app\widgets\widget-header.html" />
+    <Content Include="src\client\app\widgets\widgets.module.js" />
+    <Content Include="src\client\content\images\AngularJS-small.png" />
+    <Content Include="src\client\content\images\busy.gif" />
+    <Content Include="src\client\content\images\gulp-tiny.png" />
+    <Content Include="src\client\content\images\icon.png" />
+    <Content Include="src\client\content\styles.css" />
+    <Content Include="src\client\index.html" />
+    <Content Include="src\client\test\bindPolyfill.js" />
+    <Content Include="src\client\test\mock-data.js" />
+    <Content Include="src\client\test\spec-helper.js" />
+    <Content Include="src\client\test\stubs.js" />
+    <Content Include="src\server\app.js" />
+    <Content Include="src\server\favicon.ico" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
