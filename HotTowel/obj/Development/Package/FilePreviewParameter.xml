@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Default Web Site/HotTowel" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\krishna\.amilineni\\Documents\\GitHub\\HotTowel\\HotTowel\\obj\\Development\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\krishna\.amilineni\\Documents\\GitHub\\HotTowel\\HotTowel\\obj\\Development\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

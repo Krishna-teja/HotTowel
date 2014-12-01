@@ -1,0 +1,4 @@
+C:\Users\krishna.amilineni\Documents\GitHub\HotTowel\HotTowel\bin\HotTowel.dll.config
+C:\Users\krishna.amilineni\Documents\GitHub\HotTowel\HotTowel\bin\HotTowel.dll
+C:\Users\krishna.amilineni\Documents\GitHub\HotTowel\HotTowel\obj\Development\HotTowel.csprojResolveAssemblyReference.cache
+C:\Users\krishna.amilineni\Documents\GitHub\HotTowel\HotTowel\obj\Development\HotTowel.dll
