@@ -12,8 +12,8 @@
     <description>A sample project</description>
     <releaseNotes>This release contains the following changes...</releaseNotes>
   </metadata>
-  <!--<files>
-    <file src="**" exclude="src\**\*" />
-	<file src="build\**\*" target="bin\build" />
-  </files>-->
+  <files>
+    <file src="**" exclude="src\**\*;bower_components\**\*;obj\**\*;Properties\**\*;*.json;*.js" />
+	<file src="build\**\*" target="" />
+  </files>
 </package>
