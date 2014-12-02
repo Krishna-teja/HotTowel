@@ -5,7 +5,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-  <PropertyGroup>
+  <!--<PropertyGroup>
     <PipelineCollectFilesPhaseDependsOn>
        CopyIOCFiles;
        $(PipelineCollectFilesPhaseDependsOn);
@@ -16,6 +16,26 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <Message Text="************************************************************************" />
     <Message Text="Copying Build Files" Importance="high"/>
     <Message Text="************************************************************************" />
+  </Target>-->
+
+  <Target Name="CustomCollectFiles">
+    <ItemGroup>
+      <_CustomFiles Include="build\**\*" />
+      <FilesForPackagingFromProject Include="%(_CustomFiles.Identity)">
+        <DestinationRelativePath>%(RecursiveDir)%(Filename)%(Extension)</DestinationRelativePath>
+      </FilesForPackagingFromProject>
+    </ItemGroup>
   </Target>
+  <PropertyGroup>
+    <CopyAllFilesToSingleFolderForPackageDependsOn>
+      CustomCollectFiles;
+      $(CopyAllFilesToSingleFolderForPackageDependsOn);
+    </CopyAllFilesToSingleFolderForPackageDependsOn>
+
+    <CopyAllFilesToSingleFolderForMsdeployDependsOn>
+      CustomCollectFiles;
+      $(CopyAllFilesToSingleFolderForPackageDependsOn);
+    </CopyAllFilesToSingleFolderForMsdeployDependsOn>
+  </PropertyGroup>
 
 </Project>
