@@ -18,7 +18,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <Message Text="************************************************************************" />
   </Target>-->
 
-  <Target Name="CustomCollectFiles">
+  <!--<Target Name="CustomCollectFiles">
     <ItemGroup>
       <_CustomFiles Include="build\**\*" />
       <FilesForPackagingFromProject Include="%(_CustomFiles.Identity)">
@@ -36,6 +36,6 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       CustomCollectFiles;
       $(CopyAllFilesToSingleFolderForPackageDependsOn);
     </CopyAllFilesToSingleFolderForMsdeployDependsOn>
-  </PropertyGroup>
+  </PropertyGroup>-->
 
 </Project>
