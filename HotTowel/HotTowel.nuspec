@@ -12,8 +12,8 @@
     <description>A sample project</description>
     <releaseNotes>This release contains the following changes...</releaseNotes>
   </metadata>
-  <files>
+  <!--<files>
     <file src="**" exclude="src\**\*" />
 	<file src="build\**\*" target="bin\build" />
-  </files>
+  </files>-->
 </package>
