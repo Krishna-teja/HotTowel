@@ -20,7 +20,6 @@
 
   <Target Name="Compile" DependsOnTargets="PreBuild">
     <Csc Sources="@(CSFile)"
-        References="@(Reference)"
         OutputAssembly="$(builtdir)\$(MSBuildProjectName).exe"
         TargetType="exe" />
   </Target>
