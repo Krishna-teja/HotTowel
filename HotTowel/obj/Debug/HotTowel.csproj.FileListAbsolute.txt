@@ -4,3 +4,9 @@ C:\Users\krishna.amilineni\Documents\GitHub\HotTowel\HotTowel\bin\HotTowel.pdb
 C:\Users\krishna.amilineni\Documents\GitHub\HotTowel\HotTowel\obj\Debug\HotTowel.csprojResolveAssemblyReference.cache
 C:\Users\krishna.amilineni\Documents\GitHub\HotTowel\HotTowel\obj\Debug\HotTowel.dll
 C:\Users\krishna.amilineni\Documents\GitHub\HotTowel\HotTowel\obj\Debug\HotTowel.pdb
+C:\Users\Krishna Amilineni\Documents\GitHub\HotTowel\HotTowel\bin\HotTowel.dll.config
+C:\Users\Krishna Amilineni\Documents\GitHub\HotTowel\HotTowel\bin\HotTowel.dll
+C:\Users\Krishna Amilineni\Documents\GitHub\HotTowel\HotTowel\bin\HotTowel.pdb
+C:\Users\Krishna Amilineni\Documents\GitHub\HotTowel\HotTowel\obj\Debug\HotTowel.csprojResolveAssemblyReference.cache
+C:\Users\Krishna Amilineni\Documents\GitHub\HotTowel\HotTowel\obj\Debug\HotTowel.dll
+C:\Users\Krishna Amilineni\Documents\GitHub\HotTowel\HotTowel\obj\Debug\HotTowel.pdb

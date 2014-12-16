@@ -3,40 +3,11 @@
 This file is used by the publish/package process of your Web project. You can customize the behavior of this process
 by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
 -->
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="CopyBinOutput">
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
 
-  <PropertyGroup>
-    <!-- define defaults -->
-    <Configuration Condition="$(Configuration)==''">DEBUG</Configuration>
-  </PropertyGroup>
-
-  <Choose>
-    <When Condition=" '$(Configuration)'=='DEBUG' ">
-      <ItemGroup>
-        <BinFiles Include=".\build\**\*.*" />
-      </ItemGroup>
-    </When>
-
-    <When Condition=" '$(Configuration)'=='RELEASE' ">
-      <ItemGroup>
-        <BinFiles Include=".\build\**\*.*"/>
-      </ItemGroup>
-    </When>
-  </Choose>
-
-  <Target Name="EntryPointTarget">
-    <Message Text="EntryPointTarget started" />
-    <!-- here is build your solution -->
-  </Target>
-
-  <Target Name="CopyBinOutput" DependsOnTargets="EntryPointTarget">
-    <Message Text="CopyBinOutput started" />
-    <Copy SkipUnchangedFiles="True" OverWriteReadOnlyFiles="true"
-          SourceFiles="@(BinFiles)"
-          DestinationFiles="@(BinFiles->'.\binaries\$(Configuration)\%(RecursiveDir)%(Filename)%(Extension)')" />
-
-    <Message Text="CopyBinOutput finished, destination is .\binaries\$(Configuration)" />
+  <Target Name="AfterBuild">
+    <Copy SourceFiles="build\**\*" DestinationFolder="$(OutputPath)" ContinueOnError="true" />
   </Target>
   
   
