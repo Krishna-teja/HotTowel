@@ -11,7 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <CSFile Exclude="src\**"/>
+    <CSFile Include="build\**" Exclude="src\**"/>
   </ItemGroup>
 
   <Target Name="PreBuild">
