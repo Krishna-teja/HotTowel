@@ -183,10 +183,5 @@
   <Target Name="AfterBuild">
     <Copy SourceFiles="@(ExtraContent)" DestinationFiles="@(ExtraContent->'$(TargetDir)\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
   </Target>-->
-  <ItemGroup>
-    <Content Include="build\**">
-      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
+  <Import Project ="include.proj" />
 </Project>
