@@ -178,12 +178,12 @@
     <Copy SourceFiles="@(ExtraContent)" DestinationFiles="@(ExtraContent->'$(TargetDir)\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
   </Target>-->
   <Import Project="include.proj" />
-  <PropertyGroup>
-    <AllowedReferenceRelatedFileExtensions>
-      <!-- Prevent default XML and PDB files copied to output in RELEASE. Only *.allowedextension files will be included, which doesn't exist in my case. -->
-      *.js;
-      *.html;
-      *.json;
-    </AllowedReferenceRelatedFileExtensions>
-  </PropertyGroup>
+  <Target Name="CustomExcludeFiles" BeforeTargets="ExcludeFilesFromPackage">
+    <ItemGroup Condition=" '$(Configuration)'!='Debug' ">
+      <ExcludeFromPackageFiles Include="src\**" />
+    </ItemGroup>
+
+    <Message Text="Configuration: $(Configuration)" />
+    <Message Text="ExcludeFromPackageFiles: @(ExcludeFromPackageFiles)" Importance="high" />
+  </Target>
 </Project>
