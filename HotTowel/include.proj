@@ -1,11 +1,16 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-<ItemGroup>
-<Content Include="build\**">
-  <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
-  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-</Content>
-</ItemGroup>
   <ItemGroup>
-    <Compile Include="**\*.*" Exclude="src\**"></Compile>
+    <Content Include="build\**">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
+  <PropertyGroup>
+    <CoreCompileDependsOn>$(CoreCompileDependsOn);ExcludeTestsFolder</CoreCompileDependsOn>
+  </PropertyGroup>
+  <Target Name="ExcludeTestsFolder">
+    <ItemGroup>
+      <Compile Remove="src\**\*.*" />
+    </ItemGroup>
+  </Target>
 </Project>
