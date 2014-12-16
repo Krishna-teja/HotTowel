@@ -177,10 +177,16 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ItemGroup>
+  <!--<ItemGroup>
     <ExtraContent Include="$(MSBuildProjectDirectory)\build\**" />
   </ItemGroup>
   <Target Name="AfterBuild">
     <Copy SourceFiles="@(ExtraContent)" DestinationFiles="@(ExtraContent->'$(TargetDir)\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
-  </Target>
+  </Target>-->
+  <ItemGroup>
+    <Content Include="build\**">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 </Project>
