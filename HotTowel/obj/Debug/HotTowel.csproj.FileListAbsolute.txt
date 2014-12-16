@@ -13,3 +13,4 @@ C:\Users\Krishna Amilineni\Documents\GitHub\HotTowel\HotTowel\bin\app-b3be3335.j
 C:\Users\Krishna Amilineni\Documents\GitHub\HotTowel\HotTowel\bin\gulpfile.js
 C:\Users\Krishna Amilineni\Documents\GitHub\HotTowel\HotTowel\bin\index.html
 C:\Users\Krishna Amilineni\Documents\GitHub\HotTowel\HotTowel\bin\lib-76c52535.js
+C:\Users\Krishna Amilineni\Documents\GitHub\HotTowel\HotTowel\obj\Debug\HotTowel.csprojResolveAssemblyReference.cache
