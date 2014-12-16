@@ -12,6 +12,7 @@
     <description>A sample project</description>
     <releaseNotes>This release contains the following changes...</releaseNotes>
   </metadata>
+  <!--<files />-->
   <!--<files>
     <file src="**" exclude="src\**\*;bower_components\**\*;obj\**\*;Properties\**\*;*.json;*.js" />
 	<file src="build\**\*" target="" />
