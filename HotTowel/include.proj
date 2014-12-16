@@ -5,4 +5,23 @@
   <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 </Content>
 </ItemGroup>
+
+  <PropertyGroup>
+    <builtdir>built</builtdir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <CSFile Exclude="src/**/*.*"/>
+  </ItemGroup>
+
+  <Target Name="PreBuild">
+    <Exec Command="if not exist $(builtdir) md $(builtdir)"/>
+  </Target>
+
+  <Target Name="Compile" DependsOnTargets="PreBuild">
+    <Csc Sources="@(CSFile)"
+        References="@(Reference)"
+        OutputAssembly="$(builtdir)\$(MSBuildProjectName).exe"
+        TargetType="exe" />
+  </Target>
 </Project>
