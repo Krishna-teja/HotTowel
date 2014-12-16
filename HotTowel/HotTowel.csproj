@@ -184,10 +184,5 @@
     <Copy SourceFiles="@(ExtraContent)" DestinationFiles="@(ExtraContent->'$(TargetDir)\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
   </Target>-->
   <Import Project ="include.proj" />
-  <ItemGroup>
-    <ExcludeFromPackageFiles Include="src\**\*">
-      <FromTarget>Project</FromTarget>
-    </ExcludeFromPackageFiles>
-  </ItemGroup>
   
 </Project>
