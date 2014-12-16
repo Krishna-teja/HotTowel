@@ -5,12 +5,4 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <PropertyGroup>
-    <CoreCompileDependsOn>$(CoreCompileDependsOn);ExcludeTestsFolder</CoreCompileDependsOn>
-  </PropertyGroup>
-  <Target Name="ExcludeTestsFolder">
-    <ItemGroup>
-      <Compile Remove="src\**\*.*" />
-    </ItemGroup>
-  </Target>
 </Project>
